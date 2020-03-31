@@ -38,7 +38,7 @@
     ↑React.createElement(タグ名、属性、中に組み込まれるもの)
     また、３番目の引数にノードや配列を使った複数のオブジェクトを指定したり、更に createElement を組み込むこともできる(p70)
     
-  * ③ 仮想 DOM をレンダリングして表示
+  * ③ 仮想 DOM をレンダリングして表示<br>
     `ReactDOM.render(element, dom);`<br>
     ↑ 第一引数に createElement で作ったエレメント、
      第二引数にそれをはめ込むタグの本来の DOM

@@ -28,12 +28,12 @@
   * ② npm run build
 
 - 基本スクリプト　 P67
-  * ① 組み込み用のタグの取得
-   `let dom = document.querySelector( '#root' );`
-  * ② 仮想 DOM のエレメントの作成
-    `let element = React.createElement(`
-    `'p', {}, 'Hello React'`
-    `);`
+  * ① 組み込み用のタグの取得<br>
+   `let dom = document.querySelector( '#root' );`<br>
+  * ② 仮想 DOM のエレメントの作成<br>
+    `let element = React.createElement(`<br>
+    `'p', {}, 'Hello React'`<br>
+    `);`<br>
     ↑React.createElement(タグ名、属性、中に組み込まれるもの)
     また、３番目の引数にノードや配列を使った複数のオブジェクトを指定したり、更に createElement を組み込むこともできる(p70)
   * ③ 仮想 DOM をレンダリングして表示

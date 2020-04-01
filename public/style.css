@@ -1,0 +1,17 @@
+body {
+  font-size: 30px;
+  color: tomato;
+  margin-top: 30px;
+}
+
+.test1 {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+}
+
+.test2 {
+  height: 400px;
+  width: 400px;
+  background-color: blue;
+}

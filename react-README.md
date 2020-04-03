@@ -1,4 +1,9 @@
 ### React.js について
+  facebook によって開発されたオープンソースのフロントエンドフレームワーク。<br>
+  リアクティブ・プログラミング（何かの値が変化するとすぐに反映される仕組み）<br>
+  プログラム的に仮の DOM(仮想 DOM)を構築して、それを操作する。<br>
+  通常の DOM に比べ、かなり高速。<br>
+### React.js について
 
 - facebook によって開発されたオープンソースのフロントエンドフレームワーク。 <br>
   リアクティブ・プログラミング（何かの値が変化するとすぐに反映される仕組み） <br>
@@ -10,20 +15,45 @@
 
 - DOM の仕組み(p64) <br>
 
+    オブジェクト<br>
+    ① エレメント<br>
+    ② ノード（１版小さい単位）<br>
   - DOM は１つ１つのタグを javascript のオブジェクトとして表す <br>
     それぞれのタグには DOM のオブジェクトが用意されている <br>
     そこにタグの表示や属性が全て詰まっている <br>
 
+    `<div>`<br>
+    `<p>Hello<p>`<br>
+    `</div>`<br>
     オブジェクト - エレメント - ノード（１版小さい単位） <br>
 
     `<div>` <br>
     `<p>Hello<p>` <br>
     `</div>` <br>
 
+- プロジェクトの実行
+  * ① npm start
+  * ② npm run build
     ↑div の中に含まれているもの <br>
     ・p タグのエレメント <br>
     ・改行と半角スペースのテキストノード <br>
 
+- 基本スクリプト　 P67
+  * ① 組み込み用のタグの取得<br>
+   `let dom = document.querySelector( '#root' );`<br>
+   
+  * ② 仮想 DOM のエレメントの作成<br>
+    `let element = React.createElement(`<br>
+    `'p', {}, 'Hello React'`<br>
+    `);`<br>
+    ↑React.createElement(タグ名、属性、中に組み込まれるもの)<br>
+    また、３番目の引数にノードや配列を使った複数のオブジェクトを指定したり、<br>
+    更に createElement を組み込むこともできる(p70)
+    
+  * ③ 仮想 DOM をレンダリングして表示<br>
+    `ReactDOM.render(element, dom);`<br>
+    ↑ 第一引数に createElement で作ったエレメント、<br>
+     第二引数にそれをはめ込むタグの本来の DOM
 - プロジェクトの実行 <br>
   ① npm start <br>
   ② npm run build <br>
